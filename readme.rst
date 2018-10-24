@@ -179,6 +179,30 @@ definition of something.
 TASK: Run ``vim lorem-ipsum2.php`` to to the constructor and run ``CTRL+]`` on
 ``LoremUpsum`` type hint.
 
+4 Jumps
+^^^^^^^
+
+Before we already mentioned "jump" in some movements. Some movements are "jumps"
+which are saved within the jumplist, see ``:help jumplist``.
+
+Like with undo and redo, you can jump forth and back within the jumplist. This is
+especially useful once you navigate within source code, e.g. to the definition of a
+Framework method, you dig deeper and deeper and go back to where you was. It's like
+the back and forth within your browser on Wikipedia, just for your code.
+
+TASK: Jump to getSum() and come back.
+
+5 Searching
+^^^^^^^^^^^
+
+Vim provides a search *mode* of course. Just type ``/`` and search. The search can be
+configured in many ways and uses regular expressions.
+
+TASK: Search for *mode*.
+
+To search on a project range, use one of the many external tools like grep, git-grep,
+ack, ag, …
+
 Efficient editing
 -----------------
 
