@@ -40,4 +40,13 @@ class LoremIpsum2 extends AnotherClass
     {
         return $this->loremIpsum->getSum();
     }
+
+    public function getSomeStuff(): array
+    {
+        return [
+            'key1' => 'value1'
+            'key2' => 'value2'
+            'key3' => 'value3'
+        ];
+    }
 }
