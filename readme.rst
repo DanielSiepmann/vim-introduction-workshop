@@ -19,16 +19,24 @@ in the bottom left with instructions how to quit Vim:
 
 So lets type in `:qa!`` to quit Vim again.
 
+To open a file, just add it as argument: ``vim readme.rst``. Type this in to start.
+
 Settings
 --------
 
 By default Vim comes with no useful settings. Most developers like line numbers which
 can be turned on by typing ``:set number``.
 
-Run ``vim lorem-ipsum.md`` and type ``:set number`` to activate line numbers.
+.. note::
 
-If you quit Vim and re open the file, line numbers are gun. Settings adjusted within
+   On Ubuntu, Vim comes pre configured. To use no configuration, use ``vim -u NONE``.
+
+Run ``vim -u NONE lorem-ipsum.md`` and type ``:set number`` to activate line numbers.
+
+If you quit Vim and re open the file, line numbers are gone. Settings adjusted within
 a session are not persisted. We get back to that later.
+
+Beside line number, syntax highlighting would be awesome. Activate it using ``:syntax on``.
 
 The modes
 ---------
@@ -124,7 +132,7 @@ And there are more Modes.
 Better movement
 ---------------
 
-So far we now that we can move around in ``NORMAL`` mode with `h``, ``j`, ``k`` and ``l``.
+So far we now that we can move around in ``NORMAL`` mode with ``h``, ``j`, ``k`` and ``l``.
 There are more keys to move around. E.g.:
 
 ``G``
@@ -313,6 +321,15 @@ register. As most of the time you can prefix the playback with a count, e.g. ``2
 will repeat macro ``q`` two times.
 
 TASK: Repeat the task from "The dot" using a macro.
+
+Buffers
+-------
+
+What are buffers?
+
+How to switch buffers?
+
+How to list buffers?
 
 Settings Part 2
 ---------------
